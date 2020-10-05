@@ -1,0 +1,35 @@
+*, *:before, *:after {
+    box-sizing: border-box; 
+    outline: none;  
+}
+
+body {
+    margin: 0;
+    font-family: $PTSans;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+    outline: none;
+    &::placeholder {
+        color: $darkGray;
+        font-family: $PTSans;
+    }
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}

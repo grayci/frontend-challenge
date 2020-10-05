@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Front-end Challenge</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <!-- Swiper links -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/10974b7665.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <div class="container-large">
+                <div class="header__wrapper">
+                    <div class="header__wrapper__left">
+                        <i class="fas fa-bars" id="openMobileMenuIcon"></i>
+                        <span class="logo">
+                            <a href="/">
+                                Nome da marca
+                            </a>
+                        </span>
+                    </div>
+                    <div class="header__wrapper__middle" id="mobileMenu">
+                        <i class="fas fa-times" id="closeMobileMenuIcon"></i>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#sections">Seções</a>
+                            </li>
+                            <li>
+                                <a href="#about">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="#products">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__wrapper__right__search" style="display: none;" id="searchBar">
+                        <input type="text" id="searchInput" onkeyup="searchBarFilter()" placeholder="Buscar...">                       
+                        <ul style="display: none;" id="searchItems">
+                            <li>
+                                <a href="#">Ferramentas de jardinagem</a>
+                            </li>
+                            <li>
+                                <a href="#">Plantas</a>
+                            </li>
+                            <li>
+                                <a href="#">Sementes</a>
+                            </li>
+                            <li>
+                                <a href="#">Inseticidas</a>
+                            </li>
+                            <li>
+                                <a href="#">Presentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__wrapper__right">
+                        <ul>
+                            <li>
+                                <a id="searchIcon">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-user"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fas fa-shopping-basket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- BANNER -->
+        <section class="banner">
+            <div class="container-full">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-slide="1"></div>
+                        <div class="swiper-slide" data-slide="2"></div>
+                        <div class="swiper-slide" data-slide="3"></div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTIONS -->
+        <section class="sections" id="sections">
+            <div class="container-small">
+                <ul>
+                    <li>
+                        <i class="fas fa-toolbox"></i>
+                        <a href="#">
+                            <p>Ferramentas de jardinagem</p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-leaf"></i>
+                        <a href="#">
+                            <p>Plantas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-seedling"></i>
+                        <a href="#">
+                            <p>Sementes</p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-bug"></i>
+                        <a href="#">
+                            <p>Inseticidas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-gift"></i>
+                        <a href="#">
+                            <p>Presentes</p>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-ellipsis-h"></i>
+                        <a href="#">
+                            <p>Ver tudo</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="container-full">
+                <div class="container-large">
+                    <div class="about__wrapper">
+                        <div class="about__wrapper__left">
+                            <div class="about__wrapper__left__text">
+                                <p class="about__wrapper__left__text__small">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                                <h1>
+                                    Você já conheça a 'nome da marca'?
+                                </h1>
+                                <p class="about__wrapper__left__text__large">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat vel est ut
+                                    mollis. Morbi venenatis ex ipsum, quis congue ipsum porta at. Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit. Maecenas et magna vitae urna convallis suscipit. Praesent
+                                    imperdiet ac quam a sagittis.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="about__wrapper__right">
+                            <div class="about__wrapper__right__cards">
+                                <div class="about__wrapper__right__cards__column">
+                                    <div class="about__wrapper__right__cards__column__card">
+                                        <div class="about__wrapper__right__cards__column__card__image" data-card-image="1"></div>
+                                        <div class="about__wrapper__right__cards__column__card__text">
+                                            <span>
+                                                <strong>Título</strong>
+                                            </span>
+                                            <span>
+                                                Subtítulo
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="about__wrapper__right__cards__column">
+                                    <div class="about__wrapper__right__cards__column__card" data-card="2">
+                                        <div class="about__wrapper__right__cards__column__card__image" data-card-image="2"></div>
+                                        <div class="about__wrapper__right__cards__column__card__text" data-card-text="2">
+                                            <span>
+                                                <strong>Título</strong>
+                                            </span>
+                                            <span>
+                                                Subtítulo
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="about__wrapper__right__cards__column__card">
+                                        <div class="about__wrapper__right__cards__column__card__image" data-card-image="3"></div>
+                                        <div class="about__wrapper__right__cards__column__card__text">
+                                            <span>
+                                                <strong>Título</strong>
+                                            </span>
+                                            <span>
+                                                Subtítulo
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVIDER -->
+        <section class="divider"></section>
+
+        <!-- PRODUCTS -->
+        <section class="products" id="products">
+            <div class="products__background"></div>
+            <div class="container-large">
+                <div class="products__wrapper">
+                    <div class="products__left">
+                        <div class="products__left__image">
+                            <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=675&q=80" alt="Imagem do produto">
+                        </div>
+
+                        <div class="products__left__text">
+                            <p class="products__left__text__small">
+                                Lorem ipsum dolor sit amet
+                            </p>
+
+                            <h1>
+                                Conheça os nossos produtos
+                            </h1>
+
+                            <p class="products__left__text__large">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consequat vel est ut
+                                mollis. Morbi venenatis ex ipsum, quis congue ipsum porta at. Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit. Maecenas et magna vitae urna convallis suscipit. Praesent
+                                imperdiet ac quam a sagittis.
+                            </p>
+
+                            <button type="button">Ver todos os produtos</button>
+                        </div>
+                    </div>
+
+                    <div class="products__right">
+                        <div class="products__right__banner">
+                            <!-- Slider main container -->
+                            <div class="swiper-container">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide" data-slide="1"></div>
+                                    <div class="swiper-slide" data-slide="2"></div>
+                                    <div class="swiper-slide" data-slide="3"></div>
+                                </div>
+            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- DIVIDER -->
+        <section class="divider"></section>
+
+        <!-- GALLERY -->
+        <section class="gallery" id="gallery">
+            <div class="container-large">
+                <div class="gallery__title">
+                    <h2>@instadamarca</h2>
+                </div>
+
+                <div class="gallery__posts">
+                    <div class="gallery__posts__post">
+                        <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Imagem do Instagram">
+                        <div class="gallery__posts__post__hover">
+                            <span class="gallery__posts__post__hovertext">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Tenetur culpa delectus rem. Illum adipisci, laudantium rem vitae
+                                dignissimos iure nobis blanditiis! Perspiciatis optio ullam blanditiis, perferendis
+                                debitis quis iste dolorum!
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="gallery__posts__post">
+                        <img src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                            alt="Imagem do Instagram">
+                        <div class="gallery__posts__post__hover">
+                            <span class="gallery__posts__post__hovertext">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Tenetur culpa delectus rem. Illum adipisci, laudantium rem vitae
+                                dignissimos iure nobis blanditiis! Perspiciatis optio ullam blanditiis, perferendis
+                                debitis quis iste dolorum!
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="gallery__posts__post">
+                        <img src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"
+                            alt="Imagem do Instagram">
+                        <div class="gallery__posts__post__hover">
+                            <span class="gallery__posts__post__hovertext">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Tenetur culpa delectus rem. Illum adipisci, laudantium rem vitae
+                                dignissimos iure nobis blanditiis! Perspiciatis optio ullam blanditiis, perferendis
+                                debitis quis iste dolorum!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DIVIDER -->
+        <section class="divider"></section>
+
+        <!-- TOP ARROW -->
+        <section class="arrow-top">
+            <a href="#" id="arrowButton">
+                <i class="fas fa-arrow-up"></i>
+            </a>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container-full">
+                <div class="footer__top">
+                    <a href="/" class="logo">
+                        Nome da marca
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-large">
+                <div class="footer__center">
+                    <div class="footer__center__left">
+                        <span>Navegue</span>
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#sections">Seções</a>
+                            </li>
+                            <li>
+                                <a href="#about">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="#products">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__center__middle">
+                        <span>Redes sociais</span>
+                        <ul>
+                            <li>
+                                <i class="fab fa-facebook-square"></i>
+                                <a href="#">Curta nossa página no Facebook</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-instagram-square"></i>
+                                <a href="#">Siga nossa página no Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__center__right">
+                        <span>Receba nossas promoções</span>
+                        <form action="" name="newsletter"  onsubmit="return validateForm()">
+                            <input type="email" name="email" placeholder="Digite seu e-mail">
+                            <button type="submit" name="submit">Enviar</button>
+                        </form>
+                        <div class="feedback">
+                            <p class="feedback__positive"></p>
+                            <p class="feedback__negative"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-full">
+                <div class="footer__bottom">
+                    <span>@VNDA - Tecnologia para ecommerce - CNPJ 00.0000.000/0001-00</span>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Swiper script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main script -->
+    <script src="dist/all.js"></script>
+</body>
+</html>
